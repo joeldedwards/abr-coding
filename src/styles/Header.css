@@ -1,0 +1,71 @@
+.App-logo {
+    margin-right: 1rem;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #622493;
+    height: 88px;
+    display: flex;
+    margin-bottom: 48px;
+  }
+  
+  .App-header h1 {
+    font-weight: 700;
+    display: flex;
+    margin: 0;
+  }
+  
+  .App-header .container .row {
+    height: 100%;
+  }
+  
+  .App-header .header-col-left {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+  }
+  
+  .App-header .header-col-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .App-header .header-col-right > * {
+    border-radius: 0;
+    background-color: transparent;
+    display: flex;
+    border: 0;
+  }
+  
+  .App-header .header-col-right button {
+    height: 88px;
+    width: 72px;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid transparent;
+  }
+  
+  .App-header .header-col-right button:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  .App-header .header-col-right button:hover {
+    border-color: #D80E9C;
+  }
+  
+  .App-header .header-col-right button svg {
+    opacity: 0.60;
+  }
+  
+  .App-header .header-col-right button.active {
+    border-color: #D80E9C;
+  }
+  .App-header .header-col-right button.active svg {
+      opacity: 1;
+  }

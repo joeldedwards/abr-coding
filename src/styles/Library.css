@@ -1,0 +1,124 @@
+main {
+    min-height: calc(100vh - 234px);
+}
+#library {
+    margin-bottom: 20px;
+}
+
+#library ul {
+    list-style: none;
+}
+
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+.lib-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-header button {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.60);
+    border: 0;
+    background-color: transparent;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.lib-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lib-section .movie-card {
+    width: 100%;
+    max-width: 275px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem 1rem;
+}
+
+.movie-card .movie-card-img {
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.movie-card .movie-card-img img {
+    border-radius: 5px;
+}
+
+.movie-card h4 {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.movie-card-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.movie-card .movie-card-img:hover .movie-card-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.movie-card-overlay .details {
+    padding: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.movie-card-overlay .details h5 {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.movie-card-overlay .details p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.movie-card-overlay button {
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 120px;
+    height: 48px;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+.movie-card-overlay button svg {
+    margin-right: 10px;
+}
+
+.movie-card-overlay button.play-btn {
+    background-color: #622493;
+    border-color: #622493;
+}
